@@ -15,20 +15,20 @@ a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   p a {
     display: inline-flex;
   }
-  
+
   li {
     list-style-type: none;
   }
-  
+
   h1, h2, h3, h4, h5, h6, strong {
     font-size: inherit;
     font-weight: inherit;
   }
-  
+
   img {
     width: 100%;
     display: block;
@@ -43,17 +43,17 @@ a {
     display: block;
     clear: both;
   }
-  
-   form, input, label, textarea, option, select, button { 
+
+   form, input, label, textarea, option, select, button {
     font-size: inherit;
     font-family: inherit;
     background: transparent;
-    color: inherit; 
+    color: inherit;
    }
   html{
       scroll-behavior: smooth;
   }
-  
+
   body {
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
@@ -84,35 +84,39 @@ a {
     justify-content: center;
     align-items: center;
     align-content: initial;
-    
 
-   
-  } 
+
+
+  }
 
     .header .home .h1{
     /* background-color: salmon; */
     font-size: 32pt;
     color: #393939;
-    
+
   }
    .header .home .h1 .titulo{
-   
+
     margin: 0 0 20px 0;
 
    }
    .header .home .h1 .titulo .highlight{
      color: #e31b6d;
    }
-
+   .header .home .nofuncional{
+    font-size: 15pt;
+    color: #393939;
+    margin-bottom: 1em;
+   }
    .header .home .a{
     /* background-color: lightgreen; */
     padding: 1em 2em;
     border: 3px solid #ffffff;
     display: inline-flex;
-   
+
     color: #ffffff; /*color del texto */
     transition: all .5s ease;
-    
+
    }
 
     .header .home .a:hover{
@@ -133,7 +137,7 @@ a {
       font-size: 16px;
       font-weight: 300;
       position: absolute;
-      
+
       display: flex;
       flex-flow: row nowrap;
       justify-content:space-between;
@@ -141,18 +145,18 @@ a {
       align-content: initial;
 
       /* text-align: left; */
-      
+
     }
     .header .nav.fixed{
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 99; 
+      z-index: 99;
     }
-    
+
     .header .nav .ul{
       width: 100%;
-      
+
       display: flex;
       flex-flow: row nowrap;
      justify-content: flex-start;
@@ -211,13 +215,13 @@ a {
     .main .about{
     width: 100%;
     /* background-color: lightgrey; */
-    
-    
+
+
     }
 
     .centrado{
       width: 100%;
-      min-height: 200px;  
+      min-height: 200px;
       /* max-width: 1200px; */
       /* background-color: rgb(53, 105, 173); */
       display: flex;
@@ -234,7 +238,7 @@ a {
       color: #393939;
       /* background-color: khaki; */
        margin: 40px 0 0 0;
-    } 
+    }
     .centrado .linea{
     background: #444649;
     width: 70px;
@@ -242,7 +246,7 @@ a {
     min-height: 4px;
     margin: 0.8em 0;
     display: inline-flex;
-    
+
     }
 
     .columnas {
@@ -266,7 +270,7 @@ a {
       min-height: 100px;
       /* background-color: mediumaquamarine; */
     }
-    
+
     .hexagono{
       height: 8em;
       overflow: hidden;
@@ -274,8 +278,8 @@ a {
       visibility: hidden;
       background-color: var(--azul);
       margin: 0 0 1.5em 0;
-      
-      
+
+
       }
       .hexagono .hexagono1{
       height: 100%;
@@ -283,21 +287,21 @@ a {
       transform: rotate(-60deg);
       width: 100%;
       background-color: var(--azul);
-    
+
       }
       .hexagono .hexagono2{
         height: 100%;
-        transform: rotate(-60deg); 
+        transform: rotate(-60deg);
         visibility: visible ;
         width: 100%;
         background-color: var(--azul);
-    
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
         align-content: initial;
-    
+
       }
       .hexagono .fa{
         font-size: 50px;
@@ -326,7 +330,7 @@ a {
       display: inline-flex;
     }
     /* ------------------------------------------------------------------- */
-    
+
     .main .skill{
       width: 100%;
       min-height: 100vh; /* por ahora */
@@ -336,9 +340,9 @@ a {
       justify-content: center;
       align-items: center;
       align-content: initial;
-  
+
       /* Para que la etiqueta producto centrado siempre este en el centro en vez de poner margin auto pondremos display flex en su etiqueta contenedora */
-  
+
     }
     .skill .centrado{
       width: 90%;
@@ -354,13 +358,13 @@ a {
       width: calc( 90% / 2 );
       /* background-color: orange; */
       margin: 50px auto 0 auto;
-     
+
     }
     .skill .columna .hexagono{
       height: 18em;
       /* max-width: 18em; */
       background-color: rgb(255, 255, 255);
-      
+
     }
     .skill .columna .hexagono1{
       background-color: rgb(255, 255, 255);
@@ -391,10 +395,10 @@ a {
       font-weight: 500;
       color: var(--gris);
     }
-  
+
     .skill .h2{
       /* background-color: khaki; */
-  
+
       font-size: 2.1em;
       font-weight: 800;
       text-transform: uppercase;
@@ -404,30 +408,30 @@ a {
     .skill .bar{
     height: 28px;
     margin: 0 0 15px 0;
-    
+
     background-color: #eee;
     color: #666;
     font-size: 11pt;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
 
     position: relative;
-    
+
     }
     .skill .bar .barfill{
       width: 90%;
       height: 28px;
       background-color: #00a1a7;
       left: 0;
-    
+
       position: absolute;
       top: 0;
       opacity: 1;
       padding: 0;
-      
+
       position: absolute;
     }
     .skill .bar .barfill .tagbold{
@@ -439,7 +443,7 @@ a {
       color: #fff;
       height: 100%;
 
-     
+
       display: flex;
       flex-flow: row nowrap;
       justify-content: center;
@@ -482,13 +486,20 @@ a {
     margin: 1em 0 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
     margin: auto;
+
   }
-  
+
   .portfolio .article {
     position: relative;
   }
-  
+  .portfolio .article img{
+    width: 100%;
+    height: 100%;
+
+  }
+
   .portfolio .article .overlay {
     position: absolute;
     width: 100%;
@@ -505,7 +516,7 @@ a {
     transition: all 0.5s ease;
     opacity: 0;
 
-    
+
     margin: 0 0 0.3em;
     text-align: center;
     font-size: 20pt;
@@ -514,11 +525,11 @@ a {
 
 
   }
-  
+
   .portfolio .article:hover .overlay {
     opacity: 1;
   }
-  
+
  /* ---------CONTACT---------- */
 
  .contact{
@@ -543,7 +554,7 @@ a {
   margin: 20px 0;
  }
 
- .contact .centrado .formulario{ 
+ .contact .centrado .formulario{
   margin: 40px auto 0 auto;
   min-width: 70%;
  }
@@ -585,6 +596,23 @@ a {
   padding: 10px 15px;
   width: 100%;
  }
+ .contact .centrado .formulario .under_construction{
+  width: 30px;
+  height: 30px;
+  background: var(--azul);
+  margin: 20px 0;
+  display: flex;
+ }
+ .contact .centrado .formulario .under_construction .fa{
+  color: rgb(223, 223, 1);
+  margin: auto;
+ }
+  .contact .centrado .formulario .under_construction:hover{
+
+  color: #ffffff;
+  transition: all .5s ease;
+
+}
  .contact .centrado .formulario #button{
     border: 2px solid #fff;
     background: transparent;
@@ -598,9 +626,9 @@ a {
  .contact .centrado .formulario #button:hover{
   background: var(--chicle);
 }
- 
+
  /* ---------FOOTER---------- */
-  
+
  .footer{
   width: 100%;
   /* min-height: 100vh; */
@@ -644,7 +672,7 @@ a {
   /* margin: 0  auto; */
   position: absolute;
   margin: 0 0 200px;
-    
+
 
   color: #ffffff;
   transition: all .5s ease;
@@ -657,7 +685,7 @@ a {
 
   /* border-radius: 50%; */
   /* se pueden poner pixeles para redondear los bordes pero para hacer un circulo perfecto 50% */
-  
+
   /* font-size: 1.4em; */
   display: flex;
   flex-flow: row nowrap;
@@ -688,10 +716,10 @@ a {
   font-size: .8em;
   font-weight: 400;
 }
- 
+
 @media screen and (max-width:915px){
-  
-  .header .home .h1{ 
+
+  .header .home .h1{
     font-size: 15pt;
 
   }
@@ -699,17 +727,17 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 98; 
+    z-index: 98;
 
   }
   .header .nav .ul{
     display: none;
-    
+
   }
   .header .nav .fa-bars{
     display: flex;
-  
-    
+
+
   }
   .header .home .a{
     border: 2px solid #ffffff;
@@ -719,7 +747,7 @@ a {
     width: calc( 100% / 2 );
     min-height: 100px;
     margin: 0.9em 0 0.9em;
-    
+
   }
   .columnas .centrado .columna .titular {
     font-size: 12pt;
@@ -734,22 +762,22 @@ a {
     width: 80%;
     /* background-color: orange; */
     margin: 50px auto 0 auto;
-   
+
   }
   .portfolio .grid {
     width: 60%;
     grid-template-columns: repeat(1, 1fr);
   }
    .contact .centrado .formulario #button{
-      font-size: 10pt;  
+      font-size: 10pt;
    }
 }
-   
- 
 
-    
 
-  
+
+
+
+
 
 
 

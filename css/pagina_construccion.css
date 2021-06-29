@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  p a {
+    display: inline-flex;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  ::selection{
+    background-color: #c3bdb3;
+    color: white;
+  }
+  .clear::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+   form, input, label, textarea, option, select, button { 
+    font-size: inherit;
+    font-family: inherit;
+    background: transparent;
+    color: inherit; 
+   }
+  html{
+      scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* esta propiedad añade un pequeño desenfoque en la letra pero no esta normalizada en todos los navegadores */
+  }
+
+  .header{
+    width: 100%;
+    /* background-color: grey;  */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 0 0 50px;
+}
+
+.header .home{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: initial;
+    
+
+   
+  } 
+
+    .header .home .h1{
+    background-color: salmon;
+    font-size: 32pt;
+    color: #393939;
+    
+  }
+   .header .home .h1 .titulo{
+   
+    margin: 0 0 20px 0;
+
+   }
+   
+   .header .home .text{
+    font-size: 30pt;
+    color: #393939;
+    background-color: gainsboro;
+   }
+
+   .header .home .a{
+    /* background-color: lightgreen; */
+    padding: 1em 2em;
+    /* border: 3px solid #ffffff; */
+    display: inline-flex;
+    margin-top: 50em;
+    color: #ffffff; /*color del texto */
+    transition: all .5s ease;
+    
+   }
+
+    .header .home .a:hover{
+        color: white;
+    background-color: #48e6d9;
+    }
+
+    .header .home .a .fa {
+        margin: 0 0 0 15px;
+        /* background-color: aquamarine; */
+    }
